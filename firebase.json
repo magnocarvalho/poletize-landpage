@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "poletize",
+      "public": "dist/poletize",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

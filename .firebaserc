@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "poletize-beta": {
+      "hosting": {
+        "poletize": [
+          "poletize-alfa"
+        ]
+      }
+    }
+  }
+}
