@@ -2,7 +2,7 @@
   background-color: aliceblue;
 }
 #titulo {
-  margin-top: 150px;
+  margin-top: 250px;
   margin-bottom: 30px;
 }
 #logo {
@@ -17,7 +17,7 @@
   background-color: aliceblue;
   background-position: top;
   background-size: cover;
-  background-repeat: round;
+  background-repeat: no-repeat;;
 }
 h1 {
   text-align: center;
@@ -52,8 +52,7 @@ h1 {
   color: aliceblue;
   text-align: center;
   font-size: 25px;
-  margin-bottom: 00px;
-  padding-top: 00px;
+
 }
 #cardtext {
   font-weight: 480;
@@ -78,25 +77,19 @@ h1 {
 #baixar {
   float: right;
 }
-form p {
-  margin-left: 5rem;
-  margin-bottom: 0;
-}
-.btn {
+
+.btn-submit-baixar{
   background-color: darkslategray;
-  margin-left: 7.5rem;
-  margin-right: auto;
-  margin-top: 0;
-}
-.btn h5 {
   color: aliceblue;
   font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
+
 .aviso {
   font-size: 13px;
   text-align: center;
-  margin-left: 2rem;
-  margin-top: 8px;
+
 }
 .input-group {
   margin-top: 5px;
@@ -130,12 +123,32 @@ form p {
   );
   vertical-align: top;
 }
-@media screen and (max-width: 360px) and (max-height: 640px) {
+@media screen and (max-width: 600px) {
   .aviso {
     font-size: 13px;
     text-align: center;
-    margin-left: 1.5rem;
-    margin-top: 8px;
-    margin-right: auto;
   }
+  .titulo-poletiza{
+    max-width: 290px;
+  }
+  #titulo{
+    margin-top: 190px;
+  }
+  .card-body{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cardbody1{
+    font-size: 20px;
+  }
+
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
 }
