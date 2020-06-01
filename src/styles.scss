@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  height: 100%;
+  background-color: aqua;
+  background: linear-gradient(
+    90deg,
+    rgb(15, 159, 179) 0%,
+    rgb(16, 174, 189) 56%,
+    rgb(13, 175, 207) 100%
+  );
+}
