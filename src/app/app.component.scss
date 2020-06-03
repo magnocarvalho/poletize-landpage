@@ -13,7 +13,10 @@
 }
 .bg {
   background-image: url("/assets/images/1920.png");
-  background-color: #146984;
+  background: -moz-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+  background: linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#45b7bf",endColorstr="#146984",GradientType=1);
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -140,26 +143,41 @@ div#titulos-poletize {
 @media screen and (max-width: 1322px) {
   .bg {
     background-image: url("/assets/images/1322.png");
+    background: -moz-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
   }
 }
 @media screen and (max-width: 1280px) {
   .bg {
     background-image: url("/assets/images/1280.png");
+    background: -moz-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
   }
 }
 @media screen and (max-width: 900px) {
   .bg {
     background-image: url("/assets/images/900.png");
+    background: -moz-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
   }
 }
 @media screen and (max-width: 360px) {
   .bg {
     background-image: url("/assets/images/360.png");
+    background: -moz-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
   }
 }
 @media screen and (max-width: 600px) {
   .bg {
     background-image: url("/assets/images/600.png");
+    background: -moz-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
+    background: linear-gradient(90deg, rgba(69,183,191,1) 0%, rgba(20,105,132,1) 100%);
   }
   .aviso {
     font-size: 13px;
