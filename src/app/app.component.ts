@@ -10,7 +10,8 @@ import { LoadingBarService } from "@ngx-loading-bar/core";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  title = "poletize";
+  title = "Baixar";
+
   constructor(private api: ApiService, private loadingBar: LoadingBarService) {}
   profileForm = new FormGroup({
     nome: new FormControl("", [
@@ -34,8 +35,10 @@ export class AppComponent {
 
   salvarDados(e) {
     // e.preventDefault();
-    console.log(this.profileForm.value);
+    // console.log(this.profileForm.value);
+
     if (this.profileForm.valid) {
+      this.profileForm.disable();
       let c: Cliente = {
         createat: new Date(),
         nome: this.profileForm.get("nome").value,
@@ -47,9 +50,12 @@ export class AppComponent {
       this.api
         .createUsuario(c)
         .then((res) => {
-          this.profileForm.disable();
+          this.title = "Muito Obrigado!"
         })
-        .catch((err) => {})
+        .catch((err) => {
+          this.title = "Tente Novamente!"
+          this.profileForm.enable();
+        })
         .finally(() => {
           this.loadingBar.complete();
         });

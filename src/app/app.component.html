@@ -45,28 +45,36 @@
                         <input formControlName="nome" type="text" required aria-label="Nome" matInput
                           placeholder="Seu Nome">
                         <mat-icon matSuffix>person</mat-icon>
+                        <mat-error>Nome obrigatório</mat-error>
                       </mat-form-field>
                       <mat-form-field appearance="outline" class="example-full-width">
                         <mat-label>Email</mat-label>
                         <input type="email" formControlName="email" required aria-label="Email" matInput
                           placeholder="email@example.com">
                         <mat-icon matSuffix>mail</mat-icon>
+                        <mat-error>Email inválido</mat-error>
                       </mat-form-field>
                       <mat-form-field appearance="outline" class="example-full-width">
                         <mat-label>Telefone</mat-label>
                         <input type="tel" formControlName="telefone" required aria-label="(00) 99999-9999" matInput
-                          placeholder="(00) 99999-9999"  mask="(00) 00000-0000" prefix="+55" [showMaskTyped]="true">
+                          placeholder="(00) 99999-9999" mask="(00) 00000-0000" prefix="+55" [showMaskTyped]="true">
                         <mat-icon matSuffix>phone</mat-icon>
+                        <mat-error>Telefone inválido</mat-error>
                       </mat-form-field>
                       <div class="example-full-width">
+
                         <mat-radio-group aria-label="Select an option" formControlName="cargo">
                           <mat-radio-button value="1" required style="margin-right: 20px;">Político</mat-radio-button>
                           <mat-radio-button value="2">Assessor</mat-radio-button>
                         </mat-radio-group>
                       </div>
+                      <div class="example-full-width">
+                        <mat-error *ngIf="profileForm.get('cargo').invalid && profileForm.touched" >Selecione o cargo</mat-error>
+                      </div>
                       <div class="example-full-width t-center aviso">
-                        <button class="btn btn-default btn-submit-baixar example-full-width" (click)="salvarDados($event)">
-                          <span class="cardtitle">BAIXAR</span>
+                        <button class="btn btn-default btn-submit-baixar example-full-width"
+                          (click)="salvarDados($event)">
+                          <span class="cardtitle">{{title}}</span>
                         </button>
                       </div>
                       <div class="example-full-width t-center">
