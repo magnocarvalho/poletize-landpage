@@ -50,7 +50,10 @@ export class AppComponent {
       this.api
         .createUsuario(c)
         .then((res) => {
-          this.title = "Muito Obrigado!"
+          this.title = "Muito Obrigado!";
+          setTimeout(() => {
+            window.open('https://drive.google.com/file/d/1Xo90Kk1VW_6CYoE6BMp50oTNvDWiqhfY/view?usp=sharing')
+          }, 500);
         })
         .catch((err) => {
           this.title = "Tente Novamente!"

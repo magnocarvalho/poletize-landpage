@@ -1,24 +1,22 @@
 #header {
-  background-color: aliceblue;
+  background-color: #fff;
 }
 #titulo {
-  margin-top: 220px;
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 #logo {
   width: 100%;
   max-width: 150px;
-
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px auto;
+  text-align: center;
 }
 .bg {
-  background-image: url(/assets/images/fundo.png);
-  background-color: aliceblue;
+  background-image: url("/assets/images/1920.png");
+  background-color: #146984;
   background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .card-title{
   margin-top: 10px;
@@ -136,10 +134,33 @@ div#titulos-poletize {
 }
 @media screen and (max-width: 1000px) {
   #titulo{
-    margin-top: 150px;
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 1322px) {
+  .bg {
+    background-image: url("/assets/images/1322.png");
+  }
+}
+@media screen and (max-width: 1280px) {
+  .bg {
+    background-image: url("/assets/images/1280.png");
+  }
+}
+@media screen and (max-width: 900px) {
+  .bg {
+    background-image: url("/assets/images/900.png");
+  }
+}
+@media screen and (max-width: 360px) {
+  .bg {
+    background-image: url("/assets/images/360.png");
   }
 }
 @media screen and (max-width: 600px) {
+  .bg {
+    background-image: url("/assets/images/600.png");
+  }
   .aviso {
     font-size: 13px;
     text-align: center;
@@ -149,7 +170,7 @@ div#titulos-poletize {
     width: 100%;
   }
   #titulo{
-    margin-top: 190px;
+    margin-top: 100px;
   }
   .card-body{
     padding-left: 0;
