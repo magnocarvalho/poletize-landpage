@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { LoadingBarService } from "@ngx-loading-bar/core";
-import { Cliente } from './class/cliente';
+import { Cliente } from "./class/cliente";
 @Injectable({
   providedIn: "root",
 })
@@ -12,6 +12,7 @@ export class ApiService {
   ) {}
 
   createUsuario(policy: Cliente) {
+    this.loadingBar.start();
     return this.firestore.collection("usuarios").add(policy);
   }
 }
