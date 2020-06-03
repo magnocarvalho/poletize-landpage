@@ -2,11 +2,12 @@
   background-color: aliceblue;
 }
 #titulo {
-  margin-top: 250px;
+  margin-top: 220px;
   margin-bottom: 30px;
 }
 #logo {
-  width: 130px;
+  width: 100%;
+  max-width: 150px;
 
   margin: 10px;
   margin-left: auto;
@@ -19,11 +20,14 @@
   background-size: cover;
   background-repeat: no-repeat;;
 }
+.card-title{
+  margin-top: 10px;
+}
 h1 {
   text-align: center;
 
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 22px;
+  // font-weight: 600;
   color: aliceblue;
 }
 .space {
@@ -41,6 +45,13 @@ h1 {
 #card2 {
   background-color: lightgray;
   margin-bottom: 0;
+}
+.titulo-poletize{
+  max-width: 390px;
+  margin: 0 auto;
+}
+div#titulos-poletize {
+  margin-bottom: 32px;
 }
 #cardbody1 {
   flex: 1 1 auto;
@@ -123,13 +134,19 @@ h1 {
   );
   vertical-align: top;
 }
+@media screen and (max-width: 1000px) {
+  #titulo{
+    margin-top: 150px;
+  }
+}
 @media screen and (max-width: 600px) {
   .aviso {
     font-size: 13px;
     text-align: center;
   }
-  .titulo-poletiza{
-    max-width: 290px;
+  .titulo-poletize{
+    max-width: 360px;
+    width: 100%;
   }
   #titulo{
     margin-top: 190px;

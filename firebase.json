@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "poletize",
-      "public": "dist/poletize",
+      "public": "dist/poletize/browser",
       "ignore": [
         "firebase.json",
         "**/.*",
